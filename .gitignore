@@ -1,0 +1,30 @@
+# --- Claude Code global config (~/.claude) ---
+# Default-deny: ignore everything under claude/, then explicitly allow
+# back in the files that are actually hand-authored configuration.
+# This way new runtime/cache dirs Claude Code creates in the future are
+# ignored automatically, without needing to update this file.
+claude/*
+
+# Config worth versioning
+!claude/settings.json
+!claude/CLAUDE.md
+!claude/commands/
+!claude/agents/
+!claude/skills/
+!claude/output-styles/
+!claude/hooks/
+!claude/mcp.json
+
+# Plugin marketplace registry (list of sources), but not the cloned
+# marketplace/plugin repos themselves (large, regenerable via `claude plugin`)
+!claude/plugins/
+claude/plugins/*
+!claude/plugins/known_marketplaces.json
+
+# Defense in depth: never track secrets or machine/session-local state,
+# even if a rule above would otherwise re-include them.
+claude/**/.credentials.json
+claude/**/settings.local.json
+claude/**/*credentials*
+claude/**/*.key
+claude/**/*.token
