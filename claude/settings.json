@@ -1,5 +1,4 @@
 {
-  "theme": "auto",
   "permissions": {
     "deny": [
       "Bash(git commit)",
@@ -58,5 +57,15 @@
       "Bash(fdisk*)",
       "Bash(parted*)"
     ]
-  }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "clangd-lsp@claude-plugins-official": true
+  },
+  "effortLevel": "medium",
+  "theme": "auto",
+  "agentPushNotifEnabled": true
 }
