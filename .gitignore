@@ -14,6 +14,7 @@ claude/*
 !claude/output-styles/
 !claude/hooks/
 !claude/mcp.json
+!claude/statusline-command.sh
 
 # Plugin marketplace registry (list of sources), but not the cloned
 # marketplace/plugin repos themselves (large, regenerable via `claude plugin`)
