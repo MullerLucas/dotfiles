@@ -5,10 +5,11 @@ disable-model-invocation: true
 argument-hint: "[desc]"
 ---
 
-In the Pair-Programming workflow, we split a task into many small coding sessions.
-This is done to keep the context small.
-
-Use the following information to create a `PREP.md` file in the current working directory, that contains the base context used by all coding sessions.
-If have any questions or need more information, you can ask the user.
+This is the first step of the pair programming (pp) workflow.
+During this step, your goal is to gather all references, files, etc. that might help another agent to complete the task described by the user.
+Write these information into `PREP.md` in the current working directory. 
+If a `PREP.md` file already exists, update it.
+Don't make any actual code changes during this step.
+Keep the `PREP.md` file as concise as possible. Sacrifice grammar for the sake of concision.
 
 $ARGUMENTS

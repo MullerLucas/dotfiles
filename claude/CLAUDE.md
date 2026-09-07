@@ -1,1 +1,0 @@
-When reporting information to me, be extremely concise and sacrifice grammer for the sake of concision.

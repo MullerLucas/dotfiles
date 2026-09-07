@@ -1,5 +1,5 @@
 {
-    "permissions": {
+  "permissions": {
     "deny": [
       "Artifact",
       "EnterPlanMode",
@@ -16,20 +16,29 @@
       "CronList"
     ]
   },
-  "disableBundledSkills": true,
-  "disableWorkflows": true,
-  "disableRemoteControl": true,
+  "model": "sonnet",
   "disableClaudeAiConnectors": true,
+  "disableBundledSkills": true,
+  "disableRemoteControl": true,
+  "disableWorkflows": true,
   "disableArtifact": true,
-
   "statusLine": {
     "type": "command",
     "command": "bash ~/.claude/statusline-command.sh"
   },
   "enabledPlugins": {
-    "clangd-lsp@claude-plugins-official": true
+    "clangd-lsp@claude-plugins-official": true,
+    "rust-analyzer-lsp@claude-plugins-official": true
   },
   "effortLevel": "medium",
+  "modelSettings": {
+    "claude-opus-5": {
+      "effortLevel": "high"
+    },
+    "claude-sonnet-5": {
+      "effortLevel": "high"
+    }
+  },
   "theme": "auto",
   "agentPushNotifEnabled": true
 }
